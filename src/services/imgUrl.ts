@@ -1,5 +1,3 @@
-import noImg from "/TypeScript/game-hub/src/assets/No-Image-Placeholder.svg.png"
-
 const getCroppedImageUrl = (url:string) => {
     if(!url) return ""
     const target = "media/"
