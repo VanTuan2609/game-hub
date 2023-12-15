@@ -7,6 +7,7 @@ import getCroppedImageUrl from "../../../services/imgUrl";
 interface Props {
   game: Game;
 }
+
 const GameCard = ({ game }: Props) => {
   return (
     <Card>
@@ -18,7 +19,9 @@ const GameCard = ({ game }: Props) => {
           />
           <CriticScore score={game.metacritic}></CriticScore>
         </HStack>
-        <Heading fontSize={17}>{game.name}</Heading>
+        <Heading fontSize={17} height={10}>
+          {game.name}
+        </Heading>
       </CardBody>
     </Card>
   );
